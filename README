@@ -1,28 +1,31 @@
 Nom: MANSOURA 
-Prenom: Mohamed Amine
-Numero d'etudiant : 21917483
-Ceci est mon Programme d'algo sur le metro Parisien.
+Prenom:  Amine
+Programme RATP sur le metro Parisien.
+Ce projet vise à simuler le fonctionnement du métro parisien à l'aide de code C. Il permettra de déterminer :
 
-		Pour le COMPILER:
-DANS LE MAKEFILE : 
-./A metro.txt  [#stattion de depart] [  Preferable de mettre le num de la ligne d'arrivé -1 ] [#station d'arrivvé]
+-Les lignes de métro à prendre entre deux stations de métro.
+-La durée du trajet.
+-Les arrêts de correspondance et les directions des trains à prendre.  
 
-	(( un exemple est déjà pret à tester , possible de faire d'autres teste en modifiant le MAKEFILE
-		                          tout en respectant le plan ci-dessu  ))
 
-d'abord je commence à remplir une structure metro qui a une matrice d'adjacence carrée pour stocker
- le temps entre chaque 2 sommet qui ont une arrete commune,avec une une taille de matrice que 
- j'ai compter dans la fonction compter nb station . cette stricture permet aussi
- d'effectuer un accee au nom de la station ainsi que son nmero de ligne a partir de son numero a 
- l'aide d'une stucture interne (ONE_STATSION).
-  
-  
-  Apres effectuer l'algorithe de DJikstra sur la matrice de la stricture METROS,qui nous indiquera 
-  les successeurs de chaque station, pour djikstra j'ai une stricture indiquant le pere qui represnte
-   la station precedente de la station actuelle ,un terme used pour connaitre si je suis arriver 
-   à ma istination ou pas.
-   
- Aprés je commence à interpreté djikstra , en demmarrant de l'arrivée et revenant, sachant qu'en 
- effectuant cette algorithme, je considere la station d'arriver comme le depart,et le depart comme 
- arrivee.
  
+Installation:
+1- Téléchargez le code source du projet depuis GitHub.
+2- Ouvrez le terminal et accédez au dossier contenant le code source.
+
+
+
+Compilation:
+Pour compiler le projet, vous pouvez utiliser le fichier Makefile en suivant les étapes suivantes :
+
+Ouvrez le terminal et accédez au dossier contenant le code source.
+Exécutez la commande make pour compiler le projet.
+Exécutez le programme compilé en modifiant le Run du fichier MAKEFILE sous le format:
+./A metro.txt  [#station de depart] [ (( optionnel ))le num de la ligne d'arrivé -1 ] [#station d'arrivvé]
+
+Un exemple est déjà pret à tester , possible de faire d'autres testes en modifiant le MAKEFILE tout en respectant le format ci-dessus.
+
+
+
+
+
